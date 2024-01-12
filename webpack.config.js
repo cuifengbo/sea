@@ -50,10 +50,6 @@ module.exports = {
       {
         test: /\.png/,
         type: 'asset/resource'
-      },
-      {
-        test: /\.worker\.js$/, //以.worker.js结尾的文件将被worker-loader加载
-        use: { loader: 'worker-loader' }
       }
     ]
   }

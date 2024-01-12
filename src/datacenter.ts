@@ -11,6 +11,8 @@ interface datacenter {
     currentScene:Scene;//当前场景
     sceneList:Scene[];//场景列表
     objList:any[];//对象列表;
+    mapSize:GPoint;//地图尺寸 (单位: 格)
+    mapSeed:number;//地图种子
     debug:boolean;//是否开启调试
 }
 let olist: any[] = [];
@@ -25,6 +27,8 @@ let datacenter = {
     currentScene: null as any,
     objList: olist,
     sceneList: slist,
+    mapSize:{x:1200,y:600},
+    mapSeed:12,
     debug:true
 }
 

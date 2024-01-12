@@ -4,4 +4,4 @@ var g = new Game();
 
 g.init();
 
-g.initMap();
+
