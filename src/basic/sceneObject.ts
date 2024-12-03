@@ -3,14 +3,17 @@ import { Container } from "pixi.js";
 class Scene {
     name: string;
     body: Container;
+    type: string = 'scene';
     constructor(name: string) {
-        
-        console.log("Scene constructor");
         this.name = name;
         this.body = new Container();
     }
+    update(): void {
+            
+    }
+    
     destroy(): void {
        
     }
 }
-export {Scene}  ;
+export {Scene} ;

@@ -1,7 +1,5 @@
-import Game from "./main";
+import Framework from "./framework";
+var mainframe = new Framework();
 
-var g = new Game();
-
-g.init();
-
-
+// mainframe.go('main')
+console.log("mainframe",mainframe);
